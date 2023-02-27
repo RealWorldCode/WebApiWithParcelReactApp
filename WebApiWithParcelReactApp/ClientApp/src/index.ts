@@ -5,7 +5,8 @@ import { App } from './app';
 const container = document.getElementById("app")
 if (container) {
     const root = createRoot(container)
-    root.render(<App />)
+    const element = React.createElement(App)
+    root.render(element)
 }
 else {
     const error = document.createElement("div")
